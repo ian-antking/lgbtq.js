@@ -1,13 +1,13 @@
 {
   "name": "pride-css",
   "version": "1.0.0",
-  "description": "lagtq+ pride flag gradients for web projects",
+  "description": "LGBTQ+ pride flag gradients for web projects",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose"
   },
   "author": "Ian King",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "jest": "^24.8.0"
   },
