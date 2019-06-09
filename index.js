@@ -1,5 +1,5 @@
-const Flags = require('./src/flags');
-const Colors = require('./src/colors');
+const Flag = require('./src/flags');
+const Color = require('./src/colors');
 
-exports.Colors = Colors;
-exports.Flags = Flags;
+exports.Color = Color;
+exports.Flag = Flag;
