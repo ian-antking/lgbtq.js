@@ -8,6 +8,10 @@
   },
   "author": "Ian King",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ian-antking/lgbtq.js.git"
+  },
   "dependencies": {
     "jest": "^24.8.0"
   },
