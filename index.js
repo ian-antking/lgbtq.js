@@ -1,7 +1,7 @@
-import colors from './src/colors';
-import flags from './src/flags';
+import colors from "./lib/colors";
+import buildFlag from './lib/build-flag';
 
 export {
   colors,
-  flags
+  buildFlag
 }

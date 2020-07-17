@@ -1,6 +1,6 @@
 # LGBTQ.js
 
-LGBTQ+ pride flag gradients and colors for JavaScript projects
+LGBTQ+ pride flag gradients for React projects
 
 ## Installation
 
@@ -15,13 +15,7 @@ npm i -S lgbtq.js
 Import into your project with named imports:
 
 ```
-import { flags } from 'lgbtq.js'
-```
-
-Or
-
-```
-import { colors } from 'lgbtq.js'
+import { buildFlag } from 'lgbtq.js'
 ```
 
 ## Usage
@@ -32,7 +26,7 @@ Gradients can be accessed through dot notation and injected into the style of an
 
 ```
 const prideFlag = {
-  background: flags.pride,
+  background: buildFlag('pride'),
   width: '500px',
   height: '300px'
 }
@@ -43,7 +37,7 @@ return (
 ```
 
 ### Flags Included
-- prids
+- pride
 - trans
 - bisexual
 - pan
