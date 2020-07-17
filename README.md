@@ -26,13 +26,15 @@ import { colors } from 'lgbtq.js'
 
 ## Usage
 
-Gradients can be accessed through object dot notation and injected into the style of an element or component.
+Gradients can be accessed through dot notation and injected into the style of an element or component.
 
 ### React
 
 ```
 const prideFlag = {
   background: flags.pride,
+  width: '500px',
+  height: '300px'
 }
 
 return (
@@ -40,4 +42,14 @@ return (
 )
 ```
 
+### Flags Included
+- prids
+- trans
+- bisexual
+- pan
+- polysexual
+- asexual
+- nonbinary
+- genderqueer
+- genderfluid
 
