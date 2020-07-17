@@ -1,5 +1,5 @@
 import colors from "./lib/colors";
-import buildGradient from './lib/build-flag';
+import buildFlag from './lib/build-flag';
 
 export {
   colors,
