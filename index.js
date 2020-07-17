@@ -1,5 +1,7 @@
-const Flag = require('./src/flag');
-const Color = require('./src/color');
+import colors from './src/colors';
+import flags from './src/flags';
 
-exports.Color = Color;
-exports.Flag = Flag;
+export default {
+  colors,
+  flags
+}

@@ -1,5 +1,4 @@
-(function exportColors() {
-  const Color = {
+  export default {
     trans: {
       pink: '#f7a8b8',
       blue: '#55cdfc',
@@ -58,10 +57,3 @@
       darkGrey: '#383838',
     },
   };
-
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Color;
-  } else {
-    window.Color = Color;
-  }
-}());
