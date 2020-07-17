@@ -1,7 +1,7 @@
-import colors from './colors'
+import colors from './colors';
 
 export default {
-    pride: `linear-gradient(
+  pride: `linear-gradient(
       180deg,
       ${colors.pride.black} 0%,
       ${colors.pride.black} 12.5%,
@@ -20,7 +20,7 @@ export default {
       ${colors.pride.purple}  87.5%,
       ${colors.pride.purple}  100%
       )`,
-    trans: `linear-gradient(
+  trans: `linear-gradient(
       180deg,
       ${colors.trans.blue} 0%,
       ${colors.trans.blue} 20%,
@@ -33,7 +33,7 @@ export default {
       ${colors.trans.blue} 80%,
       ${colors.trans.blue} 100%
       )`,
-    bisexual: `linear-gradient(
+  bisexual: `linear-gradient(
       180deg,
       ${colors.bisexual.pink} 0%,
       ${colors.bisexual.pink} 40%,
@@ -42,7 +42,7 @@ export default {
       ${colors.bisexual.blue} 60%,
       ${colors.bisexual.blue} 1000%
     )`,
-    pan: `linear-gradient(
+  pan: `linear-gradient(
       180deg,
       ${colors.pan.pink} 0%,
       ${colors.pan.pink} ${100 / 3}%,
@@ -51,7 +51,7 @@ export default {
       ${colors.pan.blue} ${(100 / 3) * 2}%,
       ${colors.pan.blue} ${(100 / 3) * 3}%
     )`,
-    polysexual: `linear-gradient(
+  polysexual: `linear-gradient(
       180deg,
       ${colors.polysexual.pink} 0%,
       ${colors.polysexual.pink} ${100 / 3}%,
@@ -60,7 +60,7 @@ export default {
       ${colors.polysexual.blue} ${(100 / 3) * 2}%,
       ${colors.polysexual.blue} ${(100 / 3) * 3}%
     )`,
-    asexual: `linear-gradient(
+  asexual: `linear-gradient(
       180deg,
       ${colors.asexual.black} 0%,
       ${colors.asexual.black} 25%,
@@ -71,7 +71,7 @@ export default {
       ${colors.asexual.purple} 75%,
       ${colors.asexual.purple} 100%
       )`,
-    nonbinary: `linear-gradient(
+  nonbinary: `linear-gradient(
         180deg,
         ${colors.nonbinary.black} 0%,
         ${colors.nonbinary.black} 20%,
@@ -84,7 +84,7 @@ export default {
         ${colors.nonbinary.black} 80%,
         ${colors.nonbinary.black} 100%
         )`,
-    genderqueer: `linear-gradient(
+  genderqueer: `linear-gradient(
       180deg,
       ${colors.genderqueer.purple} 0%,
       ${colors.genderqueer.purple} ${100 / 3}%,
@@ -93,7 +93,7 @@ export default {
       ${colors.genderqueer.green} ${(100 / 3) * 2}%,
       ${colors.genderqueer.green} ${(100 / 3) * 3}%
     )`,
-    genderfluid: `linear-gradient(
+  genderfluid: `linear-gradient(
       180deg,
       ${colors.genderfluid.pink} 0%,
       ${colors.genderfluid.pink} 20%,
@@ -106,4 +106,4 @@ export default {
       ${colors.genderfluid.blue} 80%,
       ${colors.genderfluid.blue} 100%
       )`,
-  };
+};

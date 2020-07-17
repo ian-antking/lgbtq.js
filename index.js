@@ -3,5 +3,5 @@ import flags from './src/flags';
 
 export {
   colors,
-  flags
-}
+  flags,
+};
