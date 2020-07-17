@@ -1,4 +1,4 @@
-import  { buildGradient }  from '../index';
+import  { buildGradient, flags }  from '../index';
 import transFlagGradient from './trans-flag-gradient';
 
 describe('buildGradient', () => {
@@ -11,7 +11,6 @@ describe('buildGradient', () => {
       '#55cdfc',
     ]
     const expected = transFlagGradient;
-    console.log(buildGradient(colors));
 
     expect(buildGradient(colors)).toBe(expected)
   });
