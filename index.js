@@ -1,7 +1,7 @@
-import colors from './src/colors';
-import flags from './src/flags';
+import colors from "./lib/colors.js";
+import flags from "./lib/flags.js";
 
-export {
+export default {
   colors,
-  flags,
-};
+  flags
+}
