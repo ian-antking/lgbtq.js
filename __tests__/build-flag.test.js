@@ -1,2 +1,2 @@
 const esmImport = require('esm')(module);
-esmImport('./gradient-builder.assets.js');
+esmImport('./build-flag.assets.js');

@@ -6,4 +6,8 @@ describe('buildGradient', () => {
     expect(buildFlag('trans')).toBe(transFlagGradient);
     expect(buildFlag('inclusivePride')).toBe(inclusivePrideFlagGradient);
   });
+
+  it('defaults to inclusive pride', () => {
+    expect(buildFlag()).toBe(inclusivePrideFlagGradient);
+  });
 });

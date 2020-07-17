@@ -4,7 +4,7 @@
   "description": "LGBTQ+ pride flag gradients and colors for JavaScript projects",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose ./__tests__/gradient-builder.test.js",
+    "test": "jest --verbose build-flag.test",
     "start": "node --es-module-specifier-resolution=node index.js"
   },
   "author": "Ian King",
