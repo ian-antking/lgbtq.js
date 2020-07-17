@@ -15,13 +15,13 @@ npm i -S lgbtq.js
 Import into your project with named imports:
 
 ```
-import { Flags } from 'lgbtq.js'
+import { flags } from 'lgbtq.js'
 ```
 
 Or
 
 ```
-import { Colors } from 'lgbtq.js'
+import { colors } from 'lgbtq.js'
 ```
 
 ## Usage
