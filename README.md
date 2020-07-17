@@ -32,7 +32,7 @@ Gradients can be accessed through object dot notation and injected into the styl
 
 ```
 const prideFlag = {
-  background: Flags.pride,
+  background: flags.pride,
 }
 
 return (
