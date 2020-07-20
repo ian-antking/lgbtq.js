@@ -1,13 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 import GlobalStyle from './styles/global'
+
+const AppContainer = styled.div``;
 
 function App() {
   return (
-    <div className="App">
+    <AppContainer className="App">
       <GlobalStyle />
-      <header className="App-header">
-      </header>
-    </div>
+    </AppContainer>
   );
 }
 
