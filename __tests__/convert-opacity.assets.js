@@ -1,6 +1,6 @@
 import convertOpacity from '../lib/convert-opacity';
 
-describe('convertOpacyt', () => {
+describe('convertOpacity', () => {
   it('converts a decimal number into a hex vulue', () => {
     expect(convertOpacity(1)).toBe('ff');
     expect(convertOpacity(0.75)).toBe('bf');
