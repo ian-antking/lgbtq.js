@@ -4,7 +4,7 @@ import randomFlag from '../helpers/random-flag';
 
 const Container = styled.div`
   height: 50vh;
-  background: ${props => props.background || 'red'};
+  background: ${props => props.background};
 `
 
 const HeroImage = () => {
