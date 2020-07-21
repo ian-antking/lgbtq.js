@@ -1,3 +1,3 @@
 const esmImport = require('esm')(module);
 
-esmImport('./build-flag.assets.js');
+esmImport('./convert-opacity.assets.js');

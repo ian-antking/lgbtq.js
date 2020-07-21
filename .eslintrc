@@ -4,5 +4,8 @@
   ],
   "globals": {
     "window": true
-  }
+  },
+  "env": {
+    "jest": true
+}
 }

@@ -1,4 +1,4 @@
-import { buildFlag }  from '../index';
+import { buildFlag } from '../index';
 import { transFlagGradient, inclusivePrideFlagGradient } from './expected';
 
 describe('buildGradient', () => {
