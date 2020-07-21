@@ -10,4 +10,8 @@ describe('buildGradient', () => {
   it('defaults to inclusive pride', () => {
     expect(buildFlag()).toBe(inclusivePrideFlagGradient);
   });
+
+  it('defaults to inclusive pride and throws a warning if invalid flag', () => {
+    expect(buildFlag('asdf')).toBe(inclusivePrideFlagGradient);
+  });
 });
