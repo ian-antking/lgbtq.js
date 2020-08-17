@@ -4,5 +4,5 @@ const flagNames = Object.keys(flags);
 
 export default () => {
   const flagName = flagNames[Math.floor(Math.random() * flagNames.length)]
-  return buildFlag({ flag: flagName, opacity: 0.5});
+  return buildFlag({ flag: flagName, opacity: 0.7});
 }

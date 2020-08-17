@@ -28,8 +28,11 @@ const LogoLetter = styled.span`
 `
 
 const LogoCaption = styled.span`
+  text-align: center;
+  width: 100%;
   color: #EBEBEB;
-  font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1.1em;
 `
 
 const Logo = () => (
@@ -48,7 +51,7 @@ const Logo = () => (
     })}
     </LogoText>
     <LogoCaption>
-      Colors and Gradients for Web Applications
+      Colors and Gradients for web apps
     </LogoCaption>
   </Container>
 )
