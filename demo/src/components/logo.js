@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { flags } from 'lgbtq.js';
 
 const Container = styled.div`
-  width: auto;
-  height: 20vh;
+  width: 250px;
+  height: 200px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
