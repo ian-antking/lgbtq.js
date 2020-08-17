@@ -5,7 +5,7 @@ import { flags } from 'lgbtq.js';
 const logoText = 'lgbtq.js'.split('');
 
 const Container = styled.div`
-  width: 300px;
+  width: 250px;
   height: 200px;
   padding-left: 20px;
   padding-right: 20px;

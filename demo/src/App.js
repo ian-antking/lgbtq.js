@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import GlobalStyle from './styles/global';
 import HeroImage from './components/HeroImage';
+import ContentContainer from './components/ContentContainer';
+import Flag from './components/Flag';
+import { flags } from 'lgbtq.js';
 
 const AppContainer = styled.div`
   background-color: #333333;
-  height: 100vh;
   width: 100vw;
 `;
 
@@ -14,6 +16,9 @@ function App() {
     <AppContainer className="App">
       <GlobalStyle />
       <HeroImage />
+      <ContentContainer>
+        {Object.keys(flags).map(flag => <Flag key={`${flag}-flag`} flag={flag} />)}
+      </ContentContainer>
     </AppContainer>
   );
 }
