@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import FlagTitle from './FlagTitle';
+import FlagTitle from './Subtitle';
 import { buildFlag } from 'lgbtq.js';
 
 const FlagContainer = styled.div`
