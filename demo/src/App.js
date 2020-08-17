@@ -4,6 +4,7 @@ import GlobalStyle from './styles/global';
 import HeroImage from './components/HeroImage';
 import ContentContainer from './components/ContentContainer';
 import Flag from './components/Flag';
+import Subtitle from './components/Subtitle'
 import { flags } from 'lgbtq.js';
 
 const AppContainer = styled.div`
@@ -16,6 +17,7 @@ function App() {
     <AppContainer className="App">
       <GlobalStyle />
       <HeroImage />
+        <Subtitle title="Available Flags" color="#FFFFFF" />
       <ContentContainer>
         {Object.keys(flags).map(flag => <Flag key={`${flag}-flag`} flag={flag} />)}
       </ContentContainer>
