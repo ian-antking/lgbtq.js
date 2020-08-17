@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import LazyHero from 'react-lazy-hero';
 import randomFlag from '../helpers/random-flag';
-import Logo from './logo';
+import Logo from './Logo';
 
 const HeroImage = () => {
   const [ flag, setFlag ] = useState(randomFlag());

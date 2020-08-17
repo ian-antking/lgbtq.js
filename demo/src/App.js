@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyle from './styles/global';
-import HeroImage from './components/hero-image';
+import HeroImage from './components/HeroImage';
 
 const AppContainer = styled.div`
   background-color: #333333;
