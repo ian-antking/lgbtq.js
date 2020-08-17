@@ -1,6 +1,6 @@
 {
   "name": "lgbtq.js",
-  "version": "2.1.4",
+  "version": "3.0.0",
   "description": "LGBTQ+ pride flag gradients and colors for react projects",
   "main": "index.js",
   "scripts": {

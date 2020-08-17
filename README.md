@@ -26,7 +26,7 @@ Gradients can be accessed through dot notation and injected into the style of an
 
 ```
 const prideFlag = {
-  background: buildFlag('pride'),
+  background: buildFlag({flag: 'pride'}),
   width: '500px',
   height: '300px'
 }
@@ -46,7 +46,7 @@ import { buildFlag } from 'lgbtq.js'
 const FlagContainer = styled.div`
   width: 500px;
   height: 300px;
-  background: ${props => buildFlag(props.flag)};
+  background: ${props => buildFlag({ flag: props.flag })};
   margin: 10px;
 `
 
