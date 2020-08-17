@@ -22,6 +22,14 @@ import { buildFlag } from 'lgbtq.js'
 
 Gradients can be accessed through dot notation and injected into the style of an element or component.
 
+`buildFlag` takes a config object with the following properties:
+
+| Property        | Default           | Description  |
+| ------------- |:-------------:| -----:|
+| flag     | 'inclusivePride' | The name of the flag to render |
+| opacity      | 1      |   Opacity of the flag gradient |
+| background | null      | Url of the background image |
+
 ### React
 
 ```
