@@ -6,7 +6,7 @@ import Logo from './Logo';
 const Container = styled.div`
   width: 100vw;
   height: 50vh;
-  background: ${props => props.flag};
+  background: ${props => props.background};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ const HeroImage = () => {
   })
 
   return (
-    <Container flag={flag}>
+    <Container background={flag}>
       <Logo />
     </Container>
   )
