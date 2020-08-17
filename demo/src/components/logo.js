@@ -2,17 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { flags } from 'lgbtq.js';
 
+const logoText = 'lgbtq.js'.split('');
+
 const Container = styled.div`
-  width: 250px;
+  width: 300px;
   height: 200px;
-  margin: auto;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #333333;
   border-radius: 5pt;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 `
 
@@ -31,29 +32,25 @@ const LogoCaption = styled.span`
   font-size: 1.2em;
 `
 
-const Logo = () => {
-  const logoText = 'lgbtq.js'.split('')
-  console.log(logoText)
-  return (
-    <Container>
-      <LogoText>
-      {logoText.map((letter, index) => {
-        const color = flags.inclusivePride[index]
-        return (
-          <LogoLetter 
-            key={color + index}
-            color={color}
-          >
-            {letter}
-          </LogoLetter>
-        )
-      })}
-      </LogoText>
-      <LogoCaption>
-        Colors and Gradients for Web Applications
-      </LogoCaption>
-    </Container>
-  )
-}
+const Logo = () => (
+  <Container>
+    <LogoText>
+    {logoText.map((letter, index) => {
+      const color = flags.inclusivePride[index]
+      return (
+        <LogoLetter 
+          key={color + index}
+          color={color}
+        >
+          {letter}
+        </LogoLetter>
+      )
+    })}
+    </LogoText>
+    <LogoCaption>
+      Colors and Gradients for Web Applications
+    </LogoCaption>
+  </Container>
+)
 
 export default Logo

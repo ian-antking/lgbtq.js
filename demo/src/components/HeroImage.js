@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import LazyHero from 'react-lazy-hero';
+import styled from 'styled-components';
 import randomFlag from '../helpers/random-flag';
 import Logo from './Logo';
+
+const Container = styled.div`
+  width: 100vw;
+  height: 50vh;
+  background: ${props => props.flag};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 const HeroImage = () => {
   const [ flag, setFlag ] = useState(randomFlag());
@@ -12,15 +21,9 @@ const HeroImage = () => {
   })
 
   return (
-    <LazyHero
-      imageSrc=""
-      opacity={0.5}
-      style={{
-        background: flag,
-      }}
-    >
+    <Container flag={flag}>
       <Logo />
-    </LazyHero>
+    </Container>
   )
 };
 
