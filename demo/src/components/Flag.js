@@ -4,21 +4,24 @@ import { buildFlag } from 'lgbtq.js';
 import Flagtitle from './Flagtitle';
 import Card from './Card';
 
-const Flag = ({ flag, opacity, background }) => (
+const Flag = ({ title, flag, opacity, background }) => (
   <Card flag={buildFlag({ flag, opacity, background })}>
-    <Flagtitle title={flag} color="#FFFFFF" />
+    <Flagtitle title={title || flag} color="#FFFFFF" />
   </Card>
 );
 
 Flag.defaultProps = {
   opacity: 1,
   background: '',
+  flag: 'inclusivePride',
+  title: '',
 };
 
 Flag.propTypes = {
-  flag: PropTypes.string.isRequired,
+  flag: PropTypes.string,
   opacity: PropTypes.number,
   background: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default Flag;

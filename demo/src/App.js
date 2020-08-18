@@ -5,6 +5,7 @@ import HeroImage from './components/HeroImage';
 import CardContainer from './components/CardContainer';
 import ContentContainer from './components/Content';
 import Flags from './components/Flags';
+import FlagOpacity from './components/FlagOpacity';
 import Subtitle from './components/Subtitle';
 import ColorCards from './components/ColorCards';
 
@@ -35,6 +36,10 @@ function App() {
       <Subtitle><h2>Available Flags</h2></Subtitle>
       <CardContainer>
         <Flags />
+      </CardContainer>
+      <Subtitle><h2>Flag Opacity</h2></Subtitle>
+      <CardContainer>
+        <FlagOpacity />
       </CardContainer>
       <Subtitle><h2>Available Colors</h2></Subtitle>
       <CardContainer>
