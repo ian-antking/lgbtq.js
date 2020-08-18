@@ -6,6 +6,7 @@ height: 200px;
 background: ${props => props.flag || '#808080'};
 border-radius: 10px;
 margin: 10px;
+padding: 10px;
 display: flex;
 flex-flow: column;
 justify-content: center;
