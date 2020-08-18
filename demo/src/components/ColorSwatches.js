@@ -9,7 +9,7 @@ const SwatchesContainer = styled.div`
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const SwatchContainer = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ const SwatchLabel = styled.span`
 
 const ColorSwatches = ({ colors }) => (
   <SwatchesContainer>
-    {Object.keys(colors).map(color => (
+    {Object.keys(colors).map((color) => (
       <SwatchContainer key={`${color}-swatch`}>
         <ColorSwatch color={colors[color]} />
         <SwatchLabel>
@@ -37,4 +37,4 @@ const ColorSwatches = ({ colors }) => (
   </SwatchesContainer>
 );
 
-export default ColorSwatches
+export default ColorSwatches;

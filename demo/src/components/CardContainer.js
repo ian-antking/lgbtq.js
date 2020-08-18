@@ -5,6 +5,6 @@ const CardContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-`
+`;
 
 export default CardContainer;

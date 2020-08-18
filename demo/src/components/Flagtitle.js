@@ -15,7 +15,7 @@ const TitleText = styled.h2`
   padding: 8px;
   border-radius: 10px;
   border: 2px solid white;
-  color: ${props => props.color};
+  color: ${(props) => props.color};
 `;
 
 const Flagtitle = ({ title, color }) => (
@@ -27,12 +27,12 @@ const Flagtitle = ({ title, color }) => (
 );
 
 Flagtitle.defaultProps = {
-  color: '#000000'
-}
+  color: '#000000',
+};
 
 Flagtitle.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string,
-}
+};
 
 export default Flagtitle;

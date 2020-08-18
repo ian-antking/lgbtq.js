@@ -16,17 +16,17 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   border: 2px solid white;
-`
+`;
 
 const LogoText = styled.div`
   font-family: 'Lobster', cursive;
   font-size: 7em;
-`
+`;
 
 const LogoLetter = styled.span`
   color: ${(props) => props.color};
   -webkit-text-stroke: 2px #EBEBEB;
-`
+`;
 
 const LogoCaption = styled.span`
   text-align: center;
@@ -34,27 +34,27 @@ const LogoCaption = styled.span`
   color: #EBEBEB;
   font-weight: bold;
   font-size: 0.9em;
-`
+`;
 
 const Logo = () => (
   <Container>
     <LogoText>
-    {logoText.map((letter, index) => {
-      const color = flags.inclusivePride[index]
-      return (
-        <LogoLetter 
-          key={color + index}
-          color={color}
-        >
-          {letter}
-        </LogoLetter>
-      )
-    })}
+      {logoText.map((letter, index) => {
+        const color = flags.inclusivePride[index];
+        return (
+          <LogoLetter
+            key={color + index}
+            color={color}
+          >
+            {letter}
+          </LogoLetter>
+        );
+      })}
     </LogoText>
     <LogoCaption>
       Colors and Flags for Web Apps
     </LogoCaption>
   </Container>
-)
+);
 
-export default Logo
+export default Logo;

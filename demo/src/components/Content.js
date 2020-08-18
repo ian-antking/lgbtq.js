@@ -10,11 +10,11 @@ const ContentContainer = styled.div`
   justify-content: flex-start;
   margin: auto;
   color: white;
-`
+`;
 
 const renderers = {
-code: (text) => <CopyBlock text={text.value} language="jsx" theme={dracula} />,
-}
+  code: (text) => <CopyBlock text={text.value} language="jsx" theme={dracula} />,
+};
 
 const Content = ({ content }) => (
   <ContentContainer>

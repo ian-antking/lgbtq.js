@@ -1,11 +1,11 @@
 import React from 'react';
-import Flag from './Flag';
 import { flags } from 'lgbtq.js';
+import Flag from './Flag';
 
 const Flags = () => (
   <>
-    {Object.keys(flags).sort().map(flag => <Flag key={`${flag}-flag`} flag={flag} />)}
+    {Object.keys(flags).sort().map((flag) => <Flag key={`${flag}-flag`} flag={flag} />)}
   </>
-)
+);
 
-export default Flags
+export default Flags;
