@@ -52,7 +52,7 @@ const Logo = () => (
     })}
     </LogoText>
     <LogoCaption>
-      Colors and Gradients for web apps
+      Colors and Flags for Web Apps
     </LogoCaption>
   </Container>
 )

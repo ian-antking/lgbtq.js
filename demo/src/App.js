@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import GlobalStyle from './styles/global';
 import HeroImage from './components/HeroImage';
 import ContentContainer from './components/ContentContainer';
-import Flag from './components/Flag';
-import Subtitle from './components/Subtitle'
-import { flags } from 'lgbtq.js';
+import Flags from './components/Flags';
+import Subtitle from './components/Subtitle';
+import ColorCards from './components/ColorCards';
 
 const AppContainer = styled.div`
   background-color: #333333;
@@ -17,9 +17,15 @@ function App() {
     <AppContainer className="App">
       <GlobalStyle />
       <HeroImage />
+      <Subtitle title="Colors" color="#FFFFFF" />
+      <Subtitle title="Available Colors" color="#FFFFFF" />
+      <ContentContainer>
+        <ColorCards />
+      </ContentContainer>
+      <Subtitle title="Flags" color="#FFFFFF" />
         <Subtitle title="Available Flags" color="#FFFFFF" />
       <ContentContainer>
-        {Object.keys(flags).sort().map(flag => <Flag key={`${flag}-flag`} flag={flag} />)}
+        <Flags />
       </ContentContainer>
     </AppContainer>
   );
