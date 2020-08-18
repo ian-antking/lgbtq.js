@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import GlobalStyle from './styles/global';
-import { CopyBlock, dracula } from 'react-code-blocks';
-import HeroImage from './components/HeroImage';
-import ContentContainer from './components/ContentContainer';
-import Flags from './components/Flags';
-import Subtitle from './components/Subtitle';
-import ColorCards from './components/ColorCards';
-import styleInjectionExample from './content/code-examples/style-injection';
-import styledComponentsExample from './content/code-examples/styled-components-example';
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import GlobalStyle from "./styles/global";
+import HeroImage from "./components/HeroImage";
+import CardContainer from "./components/CardContainer";
+import ContentContainer from "./components/Content";
+import Flags from "./components/Flags";
+import Subtitle from "./components/Subtitle";
+import ColorCards from "./components/ColorCards";
+
+import source from "./content/content.md";
 
 const AppContainer = styled.div`
   background-color: #333333;
@@ -16,34 +16,29 @@ const AppContainer = styled.div`
 `;
 
 function App() {
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    (async () => {
+      const res = await fetch(source);
+      const data = await res.text();
+      setContent(data);
+    })();
+  });
+
   return (
     <AppContainer className="App">
       <GlobalStyle />
       <HeroImage />
-      <Subtitle title="Colors" color="#FFFFFF" />
-      <Subtitle title="Available Colors" color="#FFFFFF" />
-      <ContentContainer>
+        {content && <ContentContainer content={content} />}
+        <Subtitle title="Available Colors" color="#FFFFFF" />
+      <CardContainer>
         <ColorCards />
-      </ContentContainer>
-      <Subtitle title="Flags" color="#FFFFFF" />
-      <Subtitle title="Style Injection" color="#FFFFFF" />
-      <CopyBlock
-        text={styleInjectionExample}
-        language={'jsx'}
-        showLineNumbers
-        theme={dracula}
-      />
-      <Subtitle title="Styled Components" color="#FFFFFF" />
-      <CopyBlock
-        text={styledComponentsExample}
-        language={'jsx'}
-        showLineNumbers
-        theme={dracula}
-      />
+      </CardContainer>
         <Subtitle title="Available Flags" color="#FFFFFF" />
-      <ContentContainer>
+      <CardContainer>
         <Flags />
-      </ContentContainer>
+      </CardContainer>
     </AppContainer>
   );
 }

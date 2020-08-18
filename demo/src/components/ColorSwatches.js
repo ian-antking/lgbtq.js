@@ -27,7 +27,7 @@ const SwatchLabel = styled.span`
 const ColorSwatches = ({ colors }) => (
   <SwatchesContainer>
     {Object.keys(colors).map(color => (
-      <SwatchContainer>
+      <SwatchContainer key={`${color}-swatch`}>
         <ColorSwatch color={colors[color]} />
         <SwatchLabel>
           {color}

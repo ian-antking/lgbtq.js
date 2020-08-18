@@ -12,7 +12,7 @@ const Title = styled.span`
 const ColorCards = () => (
   <>
     {Object.keys(colors).sort().map(colorSet => (
-      <Card>
+      <Card key={`${colorSet}-card`}>
         <Title>
           {colorSet}
         </Title>
