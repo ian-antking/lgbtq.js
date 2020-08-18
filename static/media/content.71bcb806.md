@@ -18,7 +18,7 @@ import { buildFlag } from 'lgbtq.js'
 
 ### Gradients
 
-Linear gradients are build with the `buildFlag` function. These can then be injected into css or style objects.
+Linear gradients are built with the `buildFlag` function. These can then be injected into css or style objects.
 
 `buildFlag` takes a config object with the following properties:
 
