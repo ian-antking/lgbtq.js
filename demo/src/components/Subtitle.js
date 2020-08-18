@@ -12,12 +12,15 @@ const TitleContainer = styled.div`
 
 const TitleText = styled.h2`
   font-family: 'Lobster', cursive;
-  font-size: 3em;
-  -webkit-text-stroke: 1px #808080;
+  font-size: 2.5em;
+  background-color: #808080;
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid white;
   color: ${props => props.color};
 `;
 
-const FlagTitle = ({ title, color }) => (
+const Subtitle = ({ title, color }) => (
   <TitleContainer>
     <TitleText color={color}>
       {title}
@@ -25,13 +28,13 @@ const FlagTitle = ({ title, color }) => (
   </TitleContainer>
 );
 
-FlagTitle.defaultProps = {
+Subtitle.defaultProps = {
   color: '#000000'
 }
 
-FlagTitle.propTypes = {
+Subtitle.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string,
 }
 
-export default FlagTitle;
+export default Subtitle;

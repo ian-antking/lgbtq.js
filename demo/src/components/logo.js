@@ -15,6 +15,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 2px solid white;
 `
 
 const LogoText = styled.div`
@@ -32,7 +33,7 @@ const LogoCaption = styled.span`
   width: 100%;
   color: #EBEBEB;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 0.9em;
 `
 
 const Logo = () => (

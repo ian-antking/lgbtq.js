@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import FlagTitle from './Subtitle';
+import Subtitle from './Subtitle';
 import { buildFlag } from 'lgbtq.js';
 
 const FlagContainer = styled.div`
@@ -13,11 +13,12 @@ const FlagContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid white;
 `
 
 const Flag = ({ flag }) => (
   <FlagContainer flag={buildFlag({flag})}>
-    <FlagTitle title={flag} />
+    <Subtitle title={flag} color="#FFFFFF" />
   </FlagContainer>
 );
 

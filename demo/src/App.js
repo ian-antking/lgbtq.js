@@ -19,7 +19,7 @@ function App() {
       <HeroImage />
         <Subtitle title="Available Flags" color="#FFFFFF" />
       <ContentContainer>
-        {Object.keys(flags).map(flag => <Flag key={`${flag}-flag`} flag={flag} />)}
+        {Object.keys(flags).sort().map(flag => <Flag key={`${flag}-flag`} flag={flag} />)}
       </ContentContainer>
     </AppContainer>
   );
