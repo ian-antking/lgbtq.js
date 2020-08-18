@@ -74,6 +74,7 @@ export default Flag
 
 ### Flags Included
   - inclusivePride
+  - pride1978
   - gilbertBakerPride
   - trans
   - bisexual
