@@ -30,14 +30,15 @@ function App() {
     <AppContainer className="App">
       <GlobalStyle />
       <HeroImage />
-        {content && <ContentContainer content={content} />}
-        <Subtitle title="Available Colors" color="#FFFFFF" />
-      <CardContainer>
-        <ColorCards />
-      </CardContainer>
-        <Subtitle title="Available Flags" color="#FFFFFF" />
+      <Subtitle><h2>Getting Started</h2></Subtitle>
+      {content && <ContentContainer content={content} />}
+      <Subtitle><h2>Available Flags</h2></Subtitle>
       <CardContainer>
         <Flags />
+      </CardContainer>
+      <Subtitle><h2>Available Colors</h2></Subtitle>
+      <CardContainer>
+        <ColorCards />
       </CardContainer>
     </AppContainer>
   );

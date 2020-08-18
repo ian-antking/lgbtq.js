@@ -1,21 +1,15 @@
 import React from 'react';
 import Card from './Card';
-import styled from 'styled-components';
 import ColorSwatches from './ColorSwatches';
 import { colors } from 'lgbtq.js';
-
-const Title = styled.span`
-  color: #FFFFFF;
-  font-size: 2em;
-`;
 
 const ColorCards = () => (
   <>
     {Object.keys(colors).sort().map(colorSet => (
       <Card key={`${colorSet}-card`}>
-        <Title>
+        <h2>
           {colorSet}
-        </Title>
+        </h2>
         <ColorSwatches colors={colors[colorSet]} />
       </Card>
     ))}
