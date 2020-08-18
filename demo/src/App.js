@@ -6,6 +6,7 @@ import CardContainer from './components/CardContainer';
 import ContentContainer from './components/Content';
 import Flags from './components/Flags';
 import FlagOpacity from './components/FlagOpacity';
+import FlagBackground from './components/FlagBackground';
 import Subtitle from './components/Subtitle';
 import ColorCards from './components/ColorCards';
 
@@ -25,7 +26,9 @@ function App() {
       const data = await res.text();
       setContent(data);
     })();
-  });
+  }, []);
+
+  console.log('render')
 
   return (
     <AppContainer className="App">
@@ -40,6 +43,10 @@ function App() {
       <Subtitle><h2>Flag Opacity</h2></Subtitle>
       <CardContainer>
         <FlagOpacity />
+      </CardContainer>
+      <Subtitle><h2>Flag Background</h2></Subtitle>
+      <CardContainer>
+        <FlagBackground />
       </CardContainer>
       <Subtitle><h2>Available Colors</h2></Subtitle>
       <CardContainer>

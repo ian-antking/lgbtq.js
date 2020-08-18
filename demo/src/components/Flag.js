@@ -5,7 +5,7 @@ import Flagtitle from './Flagtitle';
 import Card from './Card';
 
 const Flag = ({ title, flag, opacity, background }) => (
-  <Card flag={buildFlag({ flag, opacity, background })}>
+  <Card background={buildFlag({ flag, opacity, background })}>
     <Flagtitle title={title || flag} color="#FFFFFF" />
   </Card>
 );
