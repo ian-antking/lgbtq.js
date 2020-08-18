@@ -32,24 +32,29 @@ Gradients can be accessed through dot notation and injected into the style of an
 
 ### React
 
-```
-const prideFlag = {
+```jsx
+import React from 'react';
+import { buildFlag } from 'lgbtq.js';
+
+const PrideFlag = {
   background: buildFlag({flag: 'pride'}),
   width: '500px',
   height: '300px'
-}
+};
 
 return (
   <div style={prideFlag}></div>
-)
+);
+
+export default PrideFlag;
 ```
 
 #### With Styled Components
 
-```
+```jsx
 import React from 'react';
-import styled from 'styled-components'
-import { buildFlag } from 'lgbtq.js'
+import styled from 'styled-components';
+import { buildFlag } from 'lgbtq.js';
 
 const FlagContainer = styled.div`
   width: 500px;
@@ -66,13 +71,16 @@ export default Flag
 ```
 
 ### Flags Included
-- pride
-- trans
-- bisexual
-- pan
-- polysexual
-- asexual
-- nonbinary
-- genderqueer
-- genderfluid
+  - inclusivePride
+  - gilbertBakerPride
+  - trans
+  - bisexual
+  - pan
+  - polysexual
+  - asexual
+  - nonbinary
+  - genderqueer
+  - genderfluid
+  - agender
+   -aromantic
 

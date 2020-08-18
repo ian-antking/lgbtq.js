@@ -10,7 +10,7 @@ const TitleContainer = styled.div`
 
 const TitleText = styled.h2`
   font-family: 'Lobster', cursive;
-  font-size: 2.5em;
+  font-size: 2em;
   background-color: #808080;
   padding: 8px;
   border-radius: 10px;
