@@ -16,14 +16,16 @@ import { buildFlag } from 'lgbtq.js'
 
 ## Usage
 
-Gradients can be accessed through dot notation and injected into the style of an element or component.
+### Gradients
+
+Linear gradients are build with the `buildFlag` function. These can then be injected into css or style objects.
 
 `buildFlag` takes a config object with the following properties:
 
 | Property        | Default           | Description  |
 | ------------- |:-------------:| -----:|
 | flag     | 'inclusivePride' | The name of the flag to render |
-| opacity      | 1      |   Opacity of the flag gradient |
+| opacity      | 1      |   Opacity of the flag gradient (0 - 1) |
 | background | null      | Url of the background image |
 
 ### React
@@ -58,5 +60,16 @@ const Flag = ({ flag }) => (
   <FlagContainer flag={flag} />
 )
 export default Flag
+```
+
+### Colors
+
+Flag colors are exported under their flag name on the `colors` object. They can be accessed like so:
+
+```js
+import { colors } from 'lgbtq.js';
+
+console.log(colors.inclusivePride);
+console.log(colors.inclusivePride.green);
 ```
 
