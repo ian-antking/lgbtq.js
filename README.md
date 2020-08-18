@@ -2,7 +2,7 @@
 
 LGBTQ+ pride flag gradients for React projects
 
-[View Examples Here](ian-antking.github.io/lgbtq.js)
+[View Examples Here: https://ian-antking.github.io/lgbtq.js](https://ian-antking.github.io/lgbtq.js)
 
 ## Installation
 
