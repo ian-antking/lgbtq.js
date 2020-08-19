@@ -59,11 +59,11 @@ import { buildFlag } from 'lgbtq.js';
 const FlagContainer = styled.div`
   width: 500px;
   height: 300px;
-  background: ${props => buildFlag({ flag: props.flag })};
+  background: ${props => buildFlag({flag: props.flag, opacity: 1, background: null})};
   margin: 10px;
 `
 const Flag = ({ flag }) => (
-  <FlagContainer flag={{flag, opacity: 1, background: null}} />
+  <FlagContainer flag="inclusivePride" />
 )
 export default Flag
 ```
@@ -80,17 +80,23 @@ console.log(colors.inclusivePride.green);
 ```
 
 ### Flags Included
-  - inclusivePride
-  - pride1978
-  - gilbertBakerPride
-  - trans
+  - agender
+  - aromantic
+  - asexual
+  - bear
+  - blackTrans
   - bisexual
+  - genderfluid
+  - genderqueer
+  - gilbertBakerPride
+  - inclusivePride
+  - leather
+  - lesbian
+  - lipstickLesbian
+  - nonbinary
   - pan
   - polysexual
-  - asexual
-  - nonbinary
-  - genderqueer
-  - genderfluid
-  - agender
-   -aromantic
+  - pride
+  - pride1978
+  - trans
 
