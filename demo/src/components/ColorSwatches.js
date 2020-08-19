@@ -15,12 +15,13 @@ const SwatchContainer = styled.div`
   display: flex;
   flex-direction: row;
   max-height: 20px;
-  min-width: 120px;
+  min-width: 130px;
   justify-content: space-between;
   margin: 5px;
 `;
 
 const SwatchLabel = styled.span`
+  font-size: 9pt;
   color: #FFFFFF;
 `;
 
