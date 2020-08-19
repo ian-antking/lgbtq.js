@@ -34,7 +34,7 @@ Linear gradients are built with the `buildFlag` function. These can then be inje
 import React from 'react';
 import { buildFlag } from 'lgbtq.js';
 const PrideFlag = {
-  background: buildFlag({flag, opacity: 1, background: null}),
+  background: buildFlag({flag: 'inclusivePride', opacity: 1, background: null}),
   width: '500px',
   height: '300px'
 };
@@ -57,7 +57,7 @@ const FlagContainer = styled.div`
   margin: 10px;
 `
 const Flag = ({ flag }) => (
-  <FlagContainer flag={flag, opacity: 1, background: null} />
+  <FlagContainer flag={flag: 'inclusivePride', opacity: 1, background: null} />
 )
 export default Flag
 ```
