@@ -57,7 +57,7 @@ const FlagContainer = styled.div`
   margin: 10px;
 `
 const Flag = ({ flag }) => (
-  <FlagContainer flag={'inclusivePride'} />
+  <FlagContainer flag="inclusivePride" />
 )
 export default Flag
 ```
