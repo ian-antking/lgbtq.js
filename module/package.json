@@ -6,6 +6,16 @@
   "scripts": {
     "test": "jest --config ./jest.config.js \"/\\S*.test.js\""
   },
+  "jest": {
+    "testPathDirs": [
+      "__tests__"
+    ],
+    "testPathIgnorePatterns": [
+      "/demo"
+    ],
+    "testFileExtensions": ["es6", "js"],
+    "moduleFileExtensions": ["js", "json", "es6"]
+  },
   "author": "Ian King",
   "license": "MIT",
   "repository": {
