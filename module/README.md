@@ -26,7 +26,7 @@ import { buildFlag } from 'lgbtq.js'
 
 Linear gradients are built with the `buildFlag` function. These can then be injected into css or style objects.
 
-## buildFlag([options]) ⇒ <code>string</code>
+### buildFlag([options]) ⇒ <code>string</code>
 **Kind**: global function  
 **Returns**: <code>string</code> - - CSS gradient string.  
 **Access**: public  
