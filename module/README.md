@@ -26,13 +26,17 @@ import { buildFlag } from 'lgbtq.js'
 
 Linear gradients are built with the `buildFlag` function. These can then be injected into css or style objects.
 
-`buildFlag` takes a config object with the following properties:
+## buildFlag([options]) ⇒ <code>string</code>
+**Kind**: global function  
+**Returns**: <code>string</code> - - CSS gradient string.  
+**Access**: public  
 
-| Property        | Default           | Description  |
-| ------------- |:-------------:| -----:|
-| flag     | 'inclusivePride' | The name of the flag to render |
-| opacity      | 1      |   Opacity of the flag gradient (0 - 1) |
-| background | null      | Url of the background image |
+| Param | Type | Description |
+| --- | --- | --- |
+| [options] | <code>object</code> | Configuration for the flag to render. |
+| [options.flag] | <code>string</code> | The name of the flag to render. |
+| [options.background] | <code>string</code> | URL of image to render underneath flag. |
+| [options.opacity] | <code>number</code> | Opacity of flag as float between 0 and 1. |
 
 ### React
 
