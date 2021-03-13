@@ -3,18 +3,9 @@
   "version": "3.2.2",
   "description": "LGBTQ+ pride flag gradients and colors for react projects",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest --config ./jest.config.js \"/\\S*.test.js\""
-  },
-  "jest": {
-    "testPathDirs": [
-      "__tests__"
-    ],
-    "testPathIgnorePatterns": [
-      "/demo"
-    ],
-    "testFileExtensions": ["es6", "js"],
-    "moduleFileExtensions": ["js", "json", "es6"]
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --config ./jest.config.js \"/\\S*.test.js\""
   },
   "author": "Ian King",
   "license": "MIT",
@@ -24,7 +15,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "esm": "^3.2.25",
-    "jest": "^26.1.0"
+    "jest": "^26.6.3"
+  },
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "jest": true
   }
 }

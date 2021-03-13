@@ -1,3 +1,11 @@
-const esmImport = require('esm')(module);
+import convertOpacity from '../lib/convert-opacity';
 
-esmImport('./convert-opacity.assets.js');
+describe('convertOpacity', () => {
+  it('converts a decimal number into a hex value', () => {
+    expect(convertOpacity(1)).toBe('ff');
+    expect(convertOpacity(0.75)).toBe('bf');
+    expect(convertOpacity(0.5)).toBe('80');
+    expect(convertOpacity(0.25)).toBe('40');
+    expect(convertOpacity(0)).toBe('00');
+  });
+});
